@@ -1,0 +1,8 @@
+.categories{
+    height: auto;
+    margin-bottom: 800px;
+}
+.category{
+    gap: 10px;
+    height: 200px;
+}

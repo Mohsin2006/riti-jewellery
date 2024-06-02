@@ -1,0 +1,5 @@
+.card {
+    min-width: 200px; /* Set a fixed or minimum width for the cards */
+    flex: 0 0 auto; /* Prevent cards from shrinking or growing */
+    /* Other styling for cards */
+}

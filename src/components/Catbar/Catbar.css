@@ -1,0 +1,9 @@
+.catbar ul{
+    display: flex;
+    justify-content: space-around;
+}
+.catbar ul li{
+    color: #832729;
+    list-style: none;
+    cursor: pointer;
+}

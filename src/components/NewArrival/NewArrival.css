@@ -1,0 +1,17 @@
+.new{
+    position: relative;
+    overflow-x: scroll; 
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.card-container{
+    position: absolute;
+    display: flex;
+    /* grid-template-columns: 1.3fr 1.3fr 1.3fr 1.3fr; */
+    gap: 10px;
+    overflow-wrap: inherit;
+    overflow-x: auto;
+    width: 100%;
+    
+}
