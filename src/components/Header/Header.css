@@ -1,0 +1,19 @@
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* This ensures no overflow issues */
+  }
+  
+  .header .images {
+    width: 100%;
+  }
+  
+  .header .images img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove bottom margin gap in some browsers */
+    object-fit: cover; /* Ensure image covers the container */
+  }
+  

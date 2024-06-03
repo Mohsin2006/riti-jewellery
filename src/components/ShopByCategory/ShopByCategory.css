@@ -1,8 +1,56 @@
-.categories{
-    height: auto;
-    margin-bottom: 800px;
-}
-.category{
+.categories {
+    padding: 20px;
+    margin-bottom: 50px; /* Reduce this as per your requirement */
+    text-align: center;
+  }
+  
+  .category {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     gap: 10px;
-    height: 200px;
-}
+    margin-top: 20px;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 1200px) {
+    .categories {
+      padding: 15px;
+      margin-bottom: 40px;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .categories {
+      padding: 10px;
+      margin-bottom: 30px;
+    }
+  
+    .category {
+      gap: 8px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .categories {
+      padding: 5px;
+      margin-bottom: 25px;
+    }
+  
+    .category {
+      gap: 5px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .categories {
+      padding: 0;
+      margin-bottom: 20px;
+    }
+  
+    .category {
+      gap: 3px;
+    }
+  }
+  

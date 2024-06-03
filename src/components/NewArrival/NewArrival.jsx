@@ -6,7 +6,7 @@ const NewArrival = () => {
     <>
     <div className='new text-center mt-5 fs-1'>
       <div>
-      <h1>New Arrivals</h1>
+      <h1 style={{color:"#921618"}}>New Arrivals</h1>
       <p className='fs-5' style={{color:"#222222"}}>This season's most loved, customer favorite designs - curated just for you!</p>
       </div>
      

@@ -17,14 +17,14 @@ const Hero = () => {
   </div>
   <div className="carousel-inner">
     <div className="carousel-item c active">
-      <img src={banner1} className="d-block w-100" alt="..."/>
+      <img src={banner3} className="d-block w-100" alt="..."/>
     </div>
     <div className="carousel-item c">
       <img src={banner2} className="d-block w-100" alt="..."/>
 
     </div>
     <div className="carousel-item c">
-      <img src={banner3} className="d-block w-100" alt="..."/>
+      <img src={banner1} className="d-block w-100" alt="..."/>
     </div>
   </div>
   <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">

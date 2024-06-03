@@ -7,3 +7,9 @@
     list-style: none;
     cursor: pointer;
 }
+@media(max-width:780px){
+    .catbar ul{
+        display: flex;
+        flex-direction: column;
+    }
+}
