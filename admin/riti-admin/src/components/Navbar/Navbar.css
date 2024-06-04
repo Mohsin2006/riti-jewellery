@@ -1,0 +1,14 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background: rgb(239, 229, 229);
+}
+.navbar img{
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+    border-radius: 50%;
+}
+.navbar h1{
+    color: brown;
+}

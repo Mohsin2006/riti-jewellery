@@ -1,0 +1,35 @@
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* margin-top: 20px; */
+    text-decoration: none;
+    width: 15%;
+    background: rgb(239, 229, 229);
+    color: brown;
+    right: 0;
+    font-weight: bold;
+    height: 600px;
+
+}
+.sidebar .add{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding-left: 10px;
+    padding-top: 28px;
+    padding-bottom: 10px;
+    cursor: pointer;
+    border: 1px solid gray;
+    
+}
+.sidebar .add:hover{
+    background: brown;
+    color: aliceblue;
+}
+.add img{
+    color: white;
+    height: 30px;
+    width: 30px;
+    margin-right: 12px;
+}
