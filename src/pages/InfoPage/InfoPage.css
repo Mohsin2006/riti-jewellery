@@ -1,0 +1,13 @@
+@media (max-width:500px){
+    .rates{
+        display: flex;
+        flex-direction: column;
+    }
+    .del-info{
+        width: 100%;
+    }
+    .del-info input{
+        width: 100%;
+        
+    }
+}

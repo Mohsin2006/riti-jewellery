@@ -1,4 +1,3 @@
-import React from 'react'
 import "./Catbar.css"
 const Catbar = () => {
   return (
@@ -6,9 +5,9 @@ const Catbar = () => {
       <ul>
         <li>ALL JEWELLERY</li>
         <li>RINGS</li>
-        <li>EAR RINGS</li>
+        <li>NEW ARRIVAL</li>
+        <li>SHOP BY CATEGORY</li>
         <li>BEST SELLER</li>
-        <li>BRACELET</li>
         <li>FESTIVAL SPECIAL</li>
         <li>MORE</li>
 

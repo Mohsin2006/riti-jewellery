@@ -2,7 +2,7 @@ import express from "express";
 import cors from "cors";
 import { dbConnect } from "./config/config.js";
 import productRouter from "./Router/productRouter.js";
-import { listProduct } from "./controller/productController.js";
+import userRouter from "./Router/userRouter.js";
 
 const app = express();
 const port = 4000;
@@ -12,6 +12,7 @@ dbConnect();
 
 app.use("/api/product", productRouter);
 app.use("/images", express.static("upload"));
+app.use("/api/user",userRouter)
 
 
 app.listen(port, () => {

@@ -1,4 +1,3 @@
-import React from 'react'
 import "./Hero.css"
 import banner1 from "../../assets/banner1.jpeg"
 import banner2 from "../../assets/banner2.jpeg"

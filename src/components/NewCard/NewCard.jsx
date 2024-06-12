@@ -1,4 +1,3 @@
-import React from 'react'
 import c_ring from "../../assets/c_rings.jpeg"
 import "./NewCard.css"
 const NewCard = () => {
@@ -10,7 +9,7 @@ const NewCard = () => {
             <p className="card-text">
               $100
             </p>
-            <a href="#" className="btn btn-primary">Add To Cart</a>
+            <a href="#" className="btn brown text-white">Add To Cart</a>
           </div>
         </div>
       );

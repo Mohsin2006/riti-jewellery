@@ -3,6 +3,9 @@
     flex: 0 0 auto; /* Prevent cards from shrinking or growing */
     /* Other styling for cards */
 }
+.brown{
+    background: rgb(161, 31, 31);
+}
 @media (max-width:980px){
     .card{
         width: 10rem;

@@ -1,9 +1,16 @@
 .loginsignup{
-    background-image: url("../../assets/v_locket.jpeg");
+    background:transparent;
     background-repeat: no-repeat;
     background-size: cover;
     color: brown;
     font-weight: bold;
     font-size: large;
 
+}
+span{
+    cursor: pointer;
+}
+.brown:hover{
+    background: #000;
+    color: white;
 }

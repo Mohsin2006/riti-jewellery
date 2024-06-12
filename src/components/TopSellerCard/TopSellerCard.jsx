@@ -1,4 +1,3 @@
-import React from 'react'
 import "./Top.css"
 import speaker_ring from "../../assets/speaker_ring.jpeg"
 const TopSellerCard = () => {

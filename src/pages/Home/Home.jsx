@@ -1,4 +1,3 @@
-import React from 'react'
 import Hero from '../../components/Hero/Hero';
 import ShopByCategory from "../../components/ShopByCategory/ShopByCategory"
 import NewArrival from '../../components/NewArrival/NewArrival'

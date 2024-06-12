@@ -5,11 +5,12 @@
     /* margin-top: 20px; */
     text-decoration: none;
     width: 15%;
-    background: rgb(239, 229, 229);
+    background: rgb(234, 216, 216);
     color: brown;
     right: 0;
     font-weight: bold;
-    height: 600px;
+    height: 700px;
+    margin-right: 28px;
 
 }
 .sidebar .add{
@@ -32,4 +33,19 @@
     height: 30px;
     width: 30px;
     margin-right: 12px;
+}
+@media (max-width:688px){
+
+    
+    .sidebar{
+        width: 29%;
+    }
+}
+@media (max-width:400px){
+    .sidebar p{
+display: none;
+    }
+    .sidebar{
+        width: 28%;
+    }
 }
