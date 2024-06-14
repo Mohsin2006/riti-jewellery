@@ -1,16 +1,18 @@
 // productController.js
 import productModel from "../model/productModel.js";
+import fs from "fs"
+
 
 export const addProduct = async (req, res) => {
     try {
         // Log the received file and body
-        console.log("File received:", req.file);
-        console.log("Body received:", req.body);
+        // console.log("File received:", req.file);
+        // console.log("Body received:", req.body);
 
-        // Check if the file is uploaded
-        if (!req.file) {
-            return res.status(400).json({ success: false, message: "No file uploaded" });
-        }
+        // // Check if the file is uploaded
+        // if (!req.file) {
+        //     return res.status(400).json({ success: false, message: "No file uploaded" });
+        // }
 
         // Check if required fields are provided
         const { name, description, price, category } = req.body;

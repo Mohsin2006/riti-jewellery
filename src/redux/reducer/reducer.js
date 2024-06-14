@@ -1,46 +1,39 @@
-import { ActionType } from "../constant/action_type";
-const initialState={
-    jewelery:[{
-        name:"mohsin",
-        category:"CEO"
-    }],
-};
-
-export const jewelleryReducer=(state=initialState, {type,payload})=>{
-switch (type) {
-    case ActionType.ADD_JEWELLERY:
-        return{...state.jewelery,payload}
-        default :
+// reducers/productReducer.js
+import {
+    FETCH_PRODUCTS_REQUEST,
+    FETCH_PRODUCTS_SUCCESS,
+    FETCH_PRODUCTS_FAILURE
+  } from '../action/actionTypes.js';
+  
+  const initialState = {
+    loading: false,
+    products: [],
+    error: ''
+  };
+  
+  const productReducer = (state = initialState, action) => {
+    switch (action.type) {
+      case FETCH_PRODUCTS_REQUEST:
+    return {
+      ...state,
+      loading: true
+    };
+      case FETCH_PRODUCTS_SUCCESS:
+        return {
+          loading: false,
+          products: action.payload,
+          error: ''
+        };
+      case FETCH_PRODUCTS_FAILURE:
+        return {
+          loading: false,
+          products: [],
+          error: action.payload
+        };
+      default:
         return state;
-
-}
-}
-
-export const selectedProductReducer=(state={},{type,payload})=>{
-    switch (type) {
-        case ActionType.SELECTED_JEWELLERY:
-         return {...state, ...payload}
-        case ActionType.REMOVE_JEWELLERY:
-            return {}                
-        default:
-            return state
     }
-}
-
-//         case UPDATE_JEWELLERY:
-//         return{
-//             ...state,
-//             updatedJeweleryCollection:[...state.jeweleryCollection,action.payload]
-//         };
-
-//         case REMOVE_JEWELLERY:
-//             return{
-//                 ...state,
-//                 removedJeweleryCollection:state.jeweleryCollection.filter(jewel=>jewel.id !== action.payload)
-//             };
-        
-//     default:
-//         return state;
-// }
-// }
-// export default jewelleryReducer;
+  };
+  
+  export default productReducer;
+  

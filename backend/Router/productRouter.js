@@ -5,12 +5,12 @@ import { addProduct, listProduct } from "../controller/productController.js";
 
 const productRouter = express.Router();
 
+//image storage engine
+
 const storage = multer.diskStorage({
-    destination: (req, file, cb) => {
-        cb(null, 'upload'); // Ensure the 'upload' folder exists
-    },
+    destination: 'upload', // Ensure the 'upload' folder exists
     filename: (req, file, cb) => {
-        cb(null, `${Date.now()}-${file.originalname}`);
+     return cb(null, `${Date.now()}${file.originalname}`);
     }
 });
 
